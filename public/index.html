@@ -1,0 +1,121 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades Marinhas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bibliotecas -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.8.0/dist/tf.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <!-- Script principal -->
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <header>🌊 Curiosidades Marinhas 🐬</header>
+
+    <nav>
+        <button id="abrirIA">IA de Reconhecimento</button>
+        <button id="btnAbrirChatbot">Chat-Bot</button>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <img src="static/20251119_0803_Golfinho Majestoso_simple_compose_01kadwge7jegq8y0yrh086jgm5.png" alt="Golfinho">
+            <h3>Golfinho</h3>
+            <p>Os golfinhos são animais extremamente inteligentes e sociais. Eles utilizam sons e cliques para se comunicar e identificar objetos ao seu redor através da ecolocalização.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251105_0830_Foca Majestosa_simple_compose_01k99wdt2xexx9tqtztqna7k5z.png" alt="Foca">
+            <h3>Foca</h3>
+            <p>As focas conseguem prender a respiração por até 30 minutos! Elas são mamíferos aquáticos que usam sua camada de gordura para se manter aquecidas em águas frias.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251119_0802_Água-viva Flutuante_simple_compose_01kadweqyvfnysyfjv2ggdmzvg.png" alt="Água-viva">
+            <h3>Água-viva</h3>
+            <p>As águas-vivas existem há mais de 500 milhões de anos e não possuem cérebro, coração nem ossos. Elas se movem contraindo o corpo de forma rítmica.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251105_0828_Tubarão Majestoso_simple_compose_01k99wbz86encakt8d3n6jjmqn.png" alt="Tubarão">
+            <h3>Tubarão</h3>
+            <p>Os tubarões podem detectar uma gota de sangue a quilômetros de distância. Existem mais de 400 espécies, e muitos deles são essenciais para o equilíbrio marinho.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251119_0804_Peixe Palhaço_simple_compose_01kadwj0vne1d88tes9md6rybq.png" alt="Peixe-palhaço">
+            <h3>Peixe-palhaço</h3>
+            <p>O peixe-palhaço vive em simbiose com as anêmonas-do-mar, sendo imune ao veneno delas. Curiosamente, todos nascem machos e podem mudar de sexo quando necessário.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251119_0828_Baleia Majestosa_simple_compose_01kadxxbwne6s9cde2zvazfz79.png" alt="Baleia">
+            <h3>Baleia</h3>
+            <p>As baleias são os maiores animais do planeta e possuem uma comunicação complexa. Algumas espécies, como a jubarte, emitem cantos que podem durar até 20 minutos.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251119_0808_Tartaruga Marinha Graciosa_simple_compose_01kadwpmaeexxv13kegdvs4s80.png" alt="Tartaruga Marinha">
+            <h3>Tartaruga Marinha</h3>
+            <p>As tartarugas marinhas podem viver mais de 100 anos e migram milhares de quilômetros entre as áreas de alimentação e reprodução.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251105_0832_Orca Majestosa_simple_compose_01k99wkmsxfzjbscakxnd0jhh9.png" alt="Orca">
+            <h3>Orca</h3>
+            <p>As orcas são conhecidas como “baleias assassinas”, mas na verdade pertencem à família dos golfinhos. Elas caçam em grupo e possuem alta inteligência social.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251119_0801_Raia Majestosa_simple_compose_01kadwc76nf7z9fcf2pg5qxqkx.png" alt="Raia">
+            <h3>Raia</h3>
+            <p>As raias deslizam graciosamente pela água usando suas grandes nadadeiras em forma de asas. Elas podem alcançar tamanhos impressionantes, como as mantas gigantes.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251119_0813_Polvo no Mar_simple_compose_01kadwzhvefdxagme3hdvxqq0s.png" alt="Polvo">
+            <h3>Polvo</h3>
+            <p>Os polvos possuem três corações e sangue azul. Eles são mestres da camuflagem e podem mudar de cor e textura para se misturar ao ambiente.</p>
+        </div>
+
+        <div class="card">
+            <img src="static/20251119_0815_Lula Submersa_simple_compose_01kadx5yhrftbtbm8kwmvrkny8.png" alt="Lula">
+            <h3>Lula</h3>
+            <p>As lulas são nadadoras rápidas e têm tentáculos com ventosas que as ajudam a capturar presas. Algumas espécies possuem bioluminescência e brilham no escuro.</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Curiosidades Marinhas - Criado com amor pelos oceanos 🌎💙
+    </footer>
+
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Robert"
+  agent-id="d396cafd-0d12-4f5a-bed2-ddbb355260d5"
+  language-code="pt-br"
+></df-messenger>
+
+      <!-- Modal da câmera (inicialmente escondido) -->
+  <div id="cameraModal" class="modal" aria-hidden="true" style="display:none;">
+    <div class="modal-content">
+      <button id="fecharModal" class="botao-fechar" title="Fechar">❌</button>
+      <h2 class="modal-title">Reconhecimento Facial</h2>
+      <div class="video-wrap">
+        <video id="video" autoplay muted playsinline></video>
+      </div>
+      <div class="controls">
+        <button id="tirarFoto" class="botao-foto" title="Tirar foto">📸</button>
+      </div>
+      <p id="modalStatus" class="modal-status">Aguardando...</p>
+      <canvas id="fotoCanvas" style="display:none;"></canvas>
+    </div>
+  </div>
+
+</body>
+</html>
